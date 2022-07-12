@@ -4,8 +4,95 @@
     --very-dark-blue: hsl(212, 21%, 14%)
     --dark-grayish-blue: hsl(228, 12%, 48%)
     --white:  hsl(0, 0%, 100%)
+    -- Mobile: 375px
+    -- Desktop: 1440px
+    --Font-weight: 500, 700, 700
+
 }
 
-.body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+    margin: 0 1.5rem;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+   color:  hsl(228, 12%, 48%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.container article:first-child {
+    border-radius: 1rem 1rem 0 0;
+    padding: 1.5rem 0 1rem 0;
+}
+
+h1 {
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(212, 21%, 14%);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.8;
+}
+
+.container article:last-child {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.price {
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(158, 36%, 37%);
+    
+}
+
+.price_2 {
+    color: hsl(212, 21%, 14%);;
+}
+
+.btn {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
 }
